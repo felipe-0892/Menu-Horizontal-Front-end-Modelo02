@@ -1,0 +1,57 @@
+:root{
+    --cor-fundo: #7A8083;
+    --cor-hover: #CCD6DB;
+    --cor-primaria: #E5EAED;
+}
+
+*{
+    margin: 0 auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+/*---------------------Menu horizontal principal-------------------------*/
+
+.drop-menu > ul{
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--cor-fundo);
+}
+
+.drop-menu > ul > li{
+    display: inline;
+    position: relative;
+}
+
+.drop-menu > ul > li > a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: .3s;
+}
+
+.drop-menu > ul > li > a:hover{
+    background-color: var(--cor-hover);
+}
+
+/*---------------------Menu horizontal secundário-------------------------*/
+
+.drop-menu >ul > ul{
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.drop-menu > ul > li:hover > ul{
+    display: block;
+}
+
+.drop-menu > ul > ul{
+    width: 150px;
+}
+
+.drop-menu > ul > ul > li > a{
+    display: block;
+}
+
